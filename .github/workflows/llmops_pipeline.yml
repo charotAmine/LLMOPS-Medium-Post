@@ -24,7 +24,7 @@ jobs:
 
       - name: Deploy Bicep template
         run: |
-          az deployment group create --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --template-file aistudio-main.bicep --parameters main.bicepparam
+          az deployment group create --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --template-file ./bicep/aistudio-main.bicep --parameters ./bicep/main.bicepparam
 
   # Job 2: Upload Data to Index
   upload_data_to_index:
