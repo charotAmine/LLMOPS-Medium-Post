@@ -43,7 +43,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r /scripts/requirements.txt
+          pip install -r ./scripts/requirements.txt
 
       - name: Upload data to index
         run: |
@@ -65,7 +65,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - name: Install dependencies
         run: |
-          pip install -r /scripts/requirements.txt
+          pip install -r ./scripts/requirements.txt
       - name: Run evaluation script
         run: |
           python ./scripts/evaluation.py --evaluation-data-path ./evaluation_data/data.jsonl --evaluation-name evaluationgha --metrics groundedness
@@ -86,7 +86,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - name: Install dependencies
         run: |
-          pip install -r /scripts/requirements.txt
+          pip install -r ./scripts/requirements.txt
       - name: Deploy model
         run: |
           python ./scripts/deploy_model.py
@@ -107,7 +107,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - name: Install dependencies
         run: |
-          pip install -r /scripts/requirements.txt
+          pip install -r ./scripts/requirements.txt
       - name: Test model deployment
         run: |
           python ./scripts/test_deployment.py --endpoint-name sqd-endpoint --query "what is sqd ?"
