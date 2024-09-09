@@ -49,6 +49,12 @@ azure_ai_project = {
     "project_name": os.getenv("AZUREAI_PROJECT_NAME"),
 }
 
+os.environ['AZURE_OPENAI_API_KEY'] = client.connections.get(os.getenv("AZURE_OPENAI_CONNECTION_NAME"), populate_secrets=True).api_key
+os.environ['AZURE_SEARCH_API_KEY'] = client.connections.get(os.getenv("AZURE_SEARCH_CONNECTION_NAME"), populate_secrets=True).api_key
+os.environ['AZURE_SEARCH_ENDPOINT'] = client.connections.get(os.getenv("AZURE_SEARCH_CONNECTION_NAME")).api_base
+os.environ['AZURE_OPENAI_ENDPOINT'] = client.connections.get(os.getenv("AZURE_OPENAI_CONNECTION_NAME")).api_base
+
+
 def get_model_config(evaluation_endpoint, evaluation_model):
     """Get the model configuration for the evaluation."""
     if "AZURE_OPENAI_API_KEY" in os.environ:
