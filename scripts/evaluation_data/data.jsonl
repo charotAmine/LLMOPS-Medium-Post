@@ -1,0 +1,17 @@
+
+{"chat_input": "I just started using the Squad LTD onboarding module, but I'm having trouble accessing my email. Can you help?", "truth": "You can access your email through Outlook 365 using your company credentials."}
+{"chat_input": "Who is the manager of the Engineering department at Squad LTD and what tools do they use?", "truth": "The Engineering department is managed by Alice Johnson, who uses GitHub, Jira, and Docker."}
+{"chat_input": "I need to set up my work equipment on the first day of onboarding. What should I do?", "truth": "On your first day, you should meet the team, get a tour of the office, set up your work equipment (laptop, monitor, etc.), and get access to email and Teams."}
+{"chat_input": "What tools are used in the Sales department at Squad LTD?", "truth": "The Sales department uses Salesforce, HubSpot, and ZoomInfo."}
+{"chat_input": "I’ve been onboarded for a month. What should I be focusing on now?", "truth": "In your first month, you should start working on small projects or shadow team members, join department meetings and team discussions, and participate in ongoing learning and development sessions."}
+{"chat_input": "How do I request time off at Squad LTD?", "truth": "You can request time off through Workday under the 'Time Off' tab."}
+{"chat_input": "I need to contact someone for IT support. Who should I reach out to?", "truth": "For IT support, contact the IT team at it.support@squadltd.com."}
+{"chat_input": "What is the dress code at Squad LTD?", "truth": "The dress code at Squad LTD is business casual."}
+{"chat_input": "When is the next Company All-Hands Meeting scheduled?", "truth": "The next Company All-Hands Meeting is scheduled for the first Thursday of the month at 3:00 PM."}
+{"chat_input": "I am having trouble understanding the company policies. Where can I find them?", "truth": "Company policies are available on Confluence under the 'Policies' section."}
+{"chat_input": "I recently joined Squad LTD and I'm looking for information on the annual company retreat. When is it?", "truth": "The annual company retreat is held from September 15-17."}
+{"chat_input": "I have a question about the tools used by the Human Resources department. Can you provide details?", "truth": "The Human Resources department uses Workday and BambooHR."}
+{"chat_input": "What should I do if I encounter an issue with my onboarding process?", "truth": "If you encounter an issue with the onboarding process, you should report it through the feedback system or contact HR for assistance."}
+{"chat_input": "I want to participate in ongoing learning and development sessions. When can I start?", "truth": "You can start participating in ongoing learning and development sessions after your first week during your onboarding process."}
+{"chat_input": "How can I find out more about the weekly team standups?", "truth": "Weekly team standups occur every Monday at 10:00 AM. Check your calendar or ask your team for details."}
+

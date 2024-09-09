@@ -1,0 +1,4 @@
+2024-09-06 17:33:46 +0200   28268 execution.flow     INFO     [Flex in line 0 (index starts from 0)] stdout> OPENAI:
+2024-09-06 17:33:46 +0200   28268 execution.flow     INFO     [Flex in line 0 (index starts from 0)] stdout> https://eastus.api.cognitive.microsoft.com
+2024-09-06 17:33:46 +0200   28268 execution.flow     INFO     [Flex in line 0 (index starts from 0)] stdout> text-embedding-ada-002
+2024-09-06 17:33:46 +0200   28268 execution.flow     INFO     [Flex in line 0 (index starts from 0)] stdout> https://eastus.api.cognitive.microsoft.com/openai/

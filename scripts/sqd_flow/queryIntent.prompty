@@ -1,0 +1,77 @@
+---
+name: Onboarding Intent Extraction Prompt
+description: A prompty that extracts the user's query intent based on the current query and chat history during the onboarding process.
+model:
+    api: chat
+    configuration:
+        type: azure_openai
+inputs:
+    query:
+      type: string
+    chat_history:
+        type: list
+        is_chat_history: true
+        default: []
+
+---
+system:
+- You are an AI assistant analyzing a user's current onboarding-related query and chat history.
+- Based on the chat history and current user query, infer the user's intent regarding the onboarding process.
+- Once you infer the intent, respond with a search query that can be used to retrieve relevant onboarding documents or information for the user's query.
+- Be specific in identifying the user's intent, but disregard chat history that is not relevant to the current intent.
+
+Example 1:
+With a chat_history like below:
+\```
+chat_history: [    
+  {
+    "role": "user",
+    "content": "How do I access my company email?"
+  },
+  {
+    "role": "assistant",
+    "content": "To access your company email, go to the Office 365 portal and log in with your company credentials."
+  }
+]
+\```
+User query: "Where can I reset my password?"
+
+Intent: "The user wants to know how to reset their company email password."
+Search query: "password reset for company email access"
+
+Example 2:
+With a chat_history like below:
+\```
+chat_history: [    
+  {
+    "role": "user",
+    "content": "How do I access my company email?"
+  },
+  {
+    "role": "assistant",
+    "content": "To access your company email, go to the Office 365 portal and log in with your company credentials."
+  },
+  {
+    "role": "user",
+    "content": "What other tools do I need to set up?"
+  },
+  {
+    "role": "assistant",
+    "content": "You will also need to set up access to Microsoft Teams and the internal wiki."
+  }
+]
+\```
+User query: "How do I set up Microsoft Teams?"
+
+Intent: "The user wants to know how to set up Microsoft Teams."
+Search query: "setting up Microsoft Teams for company use"
+
+{% for item in chat_history %}
+{{item.role}}
+{{item.content}}
+{% endfor %}
+
+Current user query:
+{{query}}
+
+Search query:
