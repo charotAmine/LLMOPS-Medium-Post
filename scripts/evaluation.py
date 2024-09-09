@@ -203,6 +203,9 @@ def main():
     percentage = display_metrics_with_percentages(result["metrics"])
     print("The final Percentage is: ", percentage)
     print(f"View evaluation results in AI Studio: {result['studio_url']}")
+    if percentage < 90:
+        print("Not all metrics are above 90%. Please review the results.")
+        exit(1)
     
 if __name__ == "__main__":
     main()

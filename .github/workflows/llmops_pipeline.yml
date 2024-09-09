@@ -68,7 +68,7 @@ jobs:
           pip install -r ./scripts/requirements.txt
       - name: Run evaluation script
         run: |
-          python ./scripts/evaluation.py --evaluation-data-path ./evaluation_data/data.jsonl --evaluation-name evaluationgha --metrics groundedness
+          python ./scripts/evaluation.py --evaluation-data-path ./scripts/evaluation_data/data.jsonl --evaluation-name evaluationgha --metrics groundedness
 
   # Job 4: Deploy Model
   deploy_model:

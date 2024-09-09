@@ -1,4 +1,3 @@
-
 {"chat_input": "I just started using the Squad LTD onboarding module, but I'm having trouble accessing my email. Can you help?", "truth": "You can access your email through Outlook 365 using your company credentials."}
 {"chat_input": "Who is the manager of the Engineering department at Squad LTD and what tools do they use?", "truth": "The Engineering department is managed by Alice Johnson, who uses GitHub, Jira, and Docker."}
 {"chat_input": "I need to set up my work equipment on the first day of onboarding. What should I do?", "truth": "On your first day, you should meet the team, get a tour of the office, set up your work equipment (laptop, monitor, etc.), and get access to email and Teams."}
