@@ -3,15 +3,15 @@ using './aistudio-main.bicep'
 param aiServicesCustomSubDomainName = ''
 param keyVaultEnablePurgeProtection = false
 param acrEnabled = true
-param acrName = 'mediumpostacr0025'
-param aiServicesName = 'mediumpostaiservices0025'
-param applicationInsightsName = 'mediumpostappinsights0025'
-param keyVaultName = 'mediumpostkv00025'
-param logAnalyticsName = 'mediumpostla0025'
-param storageAccountName = 'mediumpostsa0025'
-param hubName = 'mediumposthub0025'
-param projectName = 'mediumpostproject0025'
-param searchName = 'mediumpostsearch0025'
+param acrName = 'mediumpostacr0035'
+param aiServicesName = 'mediumpostaiservices0035'
+param applicationInsightsName = 'mediumpostappinsights0035'
+param keyVaultName = 'mediumpostkv00035'
+param logAnalyticsName = 'mediumpostla0035'
+param storageAccountName = 'mediumpostsa0035'
+param hubName = 'mediumposthub0035'
+param projectName = 'mediumpostproject0035'
+param searchName = 'mediumpostsearch0035'
 
 param openAiDeployments = [
   {
